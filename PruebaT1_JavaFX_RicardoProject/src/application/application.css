@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Poiret+One&display=swap');
+
+*{
+    -fx-font-family: 'Poiret One';
+}
+
+.header{
+	-fx-background-image: url("../../view.assets/sky.jpeg");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+}
+
+.footer{
+	-fx-background-color: #F0D151;
+}
+
+.imgLogin{
+	-fx-background-radius: 50;
+}
+
+.btnLogin{
+	-fx-background-color: #F0D151;
+}
+
+.btnLogin:hover{
+	-fx-background-color: #8F8D84;
+	-fx-text-fill: white;
+}
+
+.btnClose{
+	-fx-background-radius: 50;
+	-fx-font-size: 15;
+	-fx-background-color: #8F8D84;
+	-fx-text-fill: white;
+}
+
+.btnClose:hover{
+	-fx-background-radius: 50;
+	-fx-font-size: 15;
+	-fx-background-color: #F0D151;
+}
+
+.btnHome{
+	-fx-background-color: #F0D151;
+	-fx-background-radius: 30;	
+}
+.btnHome:hover{
+	-fx-background-color: #8F8D84;
+	-fx-background-radius: 30;
+	-fx-text-fill: white;	
+}
+
+.fondoVBo{
+	-fx-background-color: #CACAC9;
+}
+
+.img1{
+	-fx-background-image: url("../../view.assets/img1.jpg");
+	-fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+}
+
+.img2{
+	-fx-background-image: url("../../view.assets/img2.jpg");
+	-fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+}
+
+.img3{
+	-fx-background-image: url("../../view.assets/img3.jpg");
+	-fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+}
+
+.img4{
+	-fx-background-image: url("../../view.assets/img4.jpg");
+	-fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+}

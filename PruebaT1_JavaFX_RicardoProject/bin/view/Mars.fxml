@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" stylesheets="@../application/application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControlRocket">
+   <children>
+      <BorderPane prefHeight="500.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <Pane prefHeight="100.0" prefWidth="200.0" styleClass="header" BorderPane.alignment="CENTER">
+               <effect>
+                  <Glow level="0.75" />
+               </effect></Pane>
+         </top>
+         <bottom>
+            <Pane prefHeight="25.0" prefWidth="200.0" styleClass="footer" BorderPane.alignment="CENTER" />
+         </bottom>
+         <left>
+            <Pane prefHeight="200.0" prefWidth="150.0" BorderPane.alignment="CENTER" />
+         </left>
+         <center>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label text="Space Login">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <ImageView fx:id="fotoLogin" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../view.assets/profilephoto.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <JFXTextField focusColor="#feaf00" labelFloat="true" maxWidth="200.0" minWidth="200.0" prefWidth="200.0" promptText="Usuario">
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField focusColor="#feaf00" labelFloat="true" maxWidth="200.0" minWidth="200.0" prefWidth="200.0" promptText="Contraseña">
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXButton maxWidth="200.0" minWidth="200.0" onAction="#openStage" prefWidth="200.0" ripplerFill="TRANSPARENT" styleClass="btnLogin" text="LET ME IN!">
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="CLOSED_HAND" />
+                     </cursor>
+                  </JFXButton>
+               </children>
+            </VBox>
+         </center>
+         <right>
+            <AnchorPane prefHeight="200.0" prefWidth="150.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label text="Guest access..." AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="10.0">
+                     <tooltip>
+                        <Tooltip text="Invitados" />
+                     </tooltip>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </right>
+      </BorderPane>
+   </children>
+   <cursor>
+      <Cursor fx:constant="OPEN_HAND" />
+   </cursor>
+</AnchorPane>
